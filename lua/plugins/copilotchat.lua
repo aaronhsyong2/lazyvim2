@@ -1,7 +1,6 @@
 local prompts = {
   -- Code related prompts
   Explain = "Please explain how the following code works.",
-  Explain_Line_By_Line = "Please explain this code line by line in detail.",
   Review = "Please review the following code and provide suggestions for improvement.",
   Tests = "Please explain how the selected code works, then generate unit tests for it.",
   Refactor = "Please refactor the following code to improve its clarity and readability.",
@@ -21,11 +20,13 @@ local prompts = {
 return {
   "CopilotC-Nvim/CopilotChat.nvim",
   opts = {
-    question_header = "## User ",
+    question_header = "## Aaron ",
     answer_header = "## Copilot ",
     error_header = "## Error ",
     prompts = prompts,
-    model = "claude-3.7-sonnet",
+    -- model = "claude-3.7-sonnet",
+    -- below is base model
+    model = "gpt-4o",
     mappings = {
       -- Use tab for completion
       complete = {
