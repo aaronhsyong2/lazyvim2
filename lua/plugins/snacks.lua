@@ -4,6 +4,8 @@ return {
   opts = {
     explorer = {},
     picker = {
+      hidden = true, -- show hidden files
+      ignored = true, -- show ignored files
       sources = {
         explorer = {
           auto_close = true,
